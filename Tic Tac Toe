@@ -1,0 +1,294 @@
+Public Class Form1
+    Shared rn As Integer = 0
+    Dim count As Integer = 0
+    Dim cbtn1, cbtn2, cbtn3, cbtn4, cbtn5, cbtn6, cbtn7, cbtn8, cbtn9 As Integer
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim cbtn1 As Integer
+        count = count + 1
+        cbtn1 = count
+        If rn = 0 Then
+            Button1.Text = "X"
+            Button1.Enabled = False
+            rn = rn + 1
+        Else
+            Button1.Text = "O"
+            Button1.Enabled = False
+            rn = rn - 1
+
+        End If
+
+        If count > 4 Then
+            If Button1.Text = Button2.Text And Button2.Text = Button3.Text Then
+                MsgBox("WON")
+            ElseIf Button1.Text = Button5.Text And Button5.Text = Button9.Text Then
+                MsgBox("WON")
+            ElseIf Button1.Text = Button4.Text And Button4.Text = Button7.Text Then
+                MsgBox("WON")
+            End If
+        End If
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim cbtn2 As Integer
+        count = count + 1
+        cbtn2 = count
+        If rn = 0 Then
+            Button2.Text = "X"
+            Button2.Enabled = False
+            rn = rn + 1
+        Else
+            Button2.Text = "O"
+            Button2.Enabled = False
+            rn = rn - 1
+
+        End If
+        If count > 4 Then
+            If Button1.Text = Button2.Text And Button2.Text = Button3.Text Then
+                MsgBox("WON")
+            ElseIf Button2.Text = Button5.Text And Button5.Text = Button8.Text Then
+                MsgBox("WON")
+            End If
+        End If
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim cbtn3 As Integer
+        count = count + 1
+        cbtn3 = count
+        If rn = 0 Then
+            Button3.Text = "X"
+            Button3.Enabled = False
+            rn = rn + 1
+        Else
+            Button3.Text = "O"
+            Button3.Enabled = False
+            rn = rn - 1
+
+        End If
+        If count > 4 Then
+            If Button1.Text = Button2.Text And Button2.Text = Button3.Text Then
+                MsgBox("WON")
+            ElseIf Button3.Text = Button5.Text And Button5.Text = Button7.Text Then
+                MsgBox("WON")
+            ElseIf Button3.Text = Button6.Text And Button6.Text = Button9.Text Then
+                MsgBox("WON")
+            End If
+        End If
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Dim cbtn4 As Integer
+        count = count + 1
+        cbtn4 = count
+        If rn = 0 Then
+            Button4.Text = "X"
+            Button4.Enabled = False
+            rn = rn + 1
+        Else
+            Button4.Text = "O"
+            Button4.Enabled = False
+            rn = rn - 1
+
+        End If
+        If count > 4 Then
+            If Button4.Text = Button5.Text And Button5.Text = Button6.Text Then
+                MsgBox("WON")
+            ElseIf Button1.Text = Button4.Text And Button4.Text = Button7.Text Then
+                MsgBox("WON")
+            End If
+        End If
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Dim cbtn5 As Integer
+        count = count + 1
+        cbtn5 = count
+        If rn = 0 Then
+            Button5.Text = "X"
+            Button5.Enabled = False
+            rn = rn + 1
+        Else
+            Button5.Text = "O"
+            Button5.Enabled = False
+            rn = rn - 1
+
+        End If
+        If count > 4 Then
+            If Button1.Text = Button5.Text And Button5.Text = Button9.Text Then
+                MsgBox("WON")
+            ElseIf Button2.Text = Button5.Text And Button5.Text = Button8.Text Then
+                MsgBox("WON")
+            ElseIf Button3.Text = Button5.Text And Button5.Text = Button7.Text Then
+                MsgBox("WON")
+            ElseIf Button4.Text = Button5.Text And Button5.Text = Button6.Text Then
+                MsgBox("WON")
+            End If
+        End If
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Dim cbtn6 As Integer
+        count = count + 1
+        cbtn6 = count
+        If rn = 0 Then
+            Button6.Text = "X"
+            Button6.Enabled = False
+            rn = rn + 1
+        Else
+            Button6.Text = "O"
+            Button6.Enabled = False
+            rn = rn - 1
+
+        End If
+        If count > 4 Then
+            If Button4.Text = Button5.Text And Button5.Text = Button6.Text Then
+                MsgBox("WON")
+            ElseIf Button3.Text = Button6.Text And Button6.Text = Button9.Text Then
+                MsgBox("WON")
+            End If
+        End If
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        Dim cbtn7 As Integer
+        count = count + 1
+        cbtn7 = count
+        If rn = 0 Then
+            Button7.Text = "X"
+            Button7.Enabled = False
+            rn = rn + 1
+        Else
+            Button7.Text = "O"
+            Button7.Enabled = False
+            rn = rn - 1
+
+        End If
+        If count > 4 Then
+            If Button9.Text = Button8.Text And Button8.Text = Button7.Text Then
+                MsgBox("WON")
+            ElseIf Button7.Text = Button5.Text And Button5.Text = Button3.Text Then
+                MsgBox("WON")
+            ElseIf Button1.Text = Button4.Text And Button4.Text = Button7.Text Then
+                MsgBox("WON")
+            End If
+        End If
+    End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        Dim cbtn8 As Integer
+        count = count + 1
+        cbtn8 = count
+        If rn = 0 Then
+            Button8.Text = "X"
+            Button8.Enabled = False
+            rn = rn + 1
+        Else
+            Button8.Text = "O"
+            Button8.Enabled = False
+            rn = rn - 1
+
+        End If
+        If count > 4 Then
+            If Button7.Text = Button8.Text And Button8.Text = Button9.Text Then
+                MsgBox("WON")
+            ElseIf Button8.Text = Button5.Text And Button5.Text = Button2.Text Then
+                MsgBox("WON")
+            End If
+        End If
+
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        Dim cbtn9 As Integer
+        count = count + 1
+        cbtn9 = count
+        If rn = 0 Then
+            Button9.Text = "X"
+            Button9.Enabled = False
+            rn = rn + 1
+        Else
+            Button9.Text = "O"
+            Button9.Enabled = False
+            rn = rn - 1
+
+        End If
+        If count > 4 Then
+            If Button9.Text = Button8.Text And Button8.Text = Button7.Text Then
+                MsgBox("WON")
+            ElseIf Button1.Text = Button5.Text And Button5.Text = Button9.Text Then
+                MsgBox("WON")
+            ElseIf Button3.Text = Button6.Text And Button6.Text = Button9.Text Then
+                MsgBox("WON")
+            End If
+        End If
+    End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+
+        Button1.ResetText()
+        Button1.Enabled = True
+
+        Button2.ResetText()
+        Button2.Enabled = True
+
+        Button3.ResetText()
+        Button3.Enabled = True
+
+        Button4.ResetText()
+        Button4.Enabled = True
+
+
+        Button5.ResetText()
+        Button5.Enabled = True
+
+        Button6.ResetText()
+        Button6.Enabled = True
+
+        Button7.ResetText()
+        Button7.Enabled = True
+
+        Button8.ResetText()
+        Button8.Enabled = True
+
+        Button9.ResetText()
+        Button9.Enabled = True
+
+    End Sub
+
+    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+        count = count - 1
+        If count = cbtn1 Then
+            Button1.ResetText()
+            Button1.Enabled = True
+        ElseIf count = cbtn2 Then
+            Button2.ResetText()
+            Button2.Enabled = True
+        ElseIf count = cbtn3 Then
+            Button3.ResetText()
+            Button3.Enabled = True
+        ElseIf count = cbtn4 Then
+            Button4.ResetText()
+            Button4.Enabled = True
+        ElseIf count = cbtn5 Then
+            Button5.ResetText()
+            Button5.Enabled = True
+        ElseIf count = cbtn6 Then
+            Button6.ResetText()
+            Button6.Enabled = True
+        ElseIf count = cbtn7 Then
+            Button7.ResetText()
+            Button7.Enabled = True
+        ElseIf count = cbtn8 Then
+            Button8.ResetText()
+            Button8.Enabled = True
+        Else
+            Button9.ResetText()
+            Button9.Enabled = True
+        End If
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+
+    End Sub
+End Class
